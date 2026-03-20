@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>CECINA PICHOS | LEGADO FAMILIAR DESDE 1997</title>
+
+    <meta name="description" content="Cecina auténtica de Yecapixtla en Ozumba y La Paz. Venta por kilo, tacos y taquizas. Tradición desde 1997.">
+    <meta name="keywords" content="cecina Yecapixtla, tacos de cecina, taquizas Estado de México, Ozumba, La Paz">
+    <meta name="author" content="Cecina Pichos">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* AJUSTE CRÍTICO: Elimina el desplazamiento horizontal y la franja blanca */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg-textura-crema {
+            background-color: #f4ece1;
+            background-image: url('textura.png');
+            background-repeat: repeat;
+            background-size: auto;
+        }
+
+        :root {
+            --pichos-red: #3D0510;
+            --pichos-gold: #B28B46;
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #f4ece1;
+            background-image: linear-gradient(rgba(244,236,225,0.75), rgba(244,236,225,0.75)), url('textura.png');
+            background-repeat: repeat;
+            background-size: auto;
+        }
+
+        h1, h2, h3, .font-serif {
+            font-family: 'Cinzel', serif;
+            letter-spacing: .05em;
+        }
+
+        header {
+            background-color: var(--pichos-red);
+            border-top: 4px solid var(--pichos-gold);
+            border-bottom: 4px solid var(--pichos-gold);
+            padding: 10px 0;
+            position: relative;
+            z-index: 40;
+        }
+
+        .card-madera {
+            border: 12px solid #d4c3a3;
+            background: white;
+            transition: transform .4s ease;
+        }
+
+        .card-madera:hover { transform: translateY(-10px); }
+
+        .pluma-animada {
+            position: fixed;
+            z-index: 10;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+            filter: drop-shadow(10px 20px 15px rgba(0,0,0,.2));
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        footer {
+            position: relative;
+            z-index: 40;
+            background-color: var(--pichos-red);
+        }
+    </style>
+</head>
+
+<body class="text-stone-900">
+
+    <header>
+        <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
+            <img src="logo_pichos_sin_fondo.png" alt="Logo Cecina Pichos Yecapixtla" class="h-16 md:h-20 mb-4 drop-shadow-lg">
+            
+            <nav aria-label="Navegación principal">
+                <ul class="hidden md:flex md:space-x-12 lg:space-x-20 text-white text-[10px] uppercase tracking-[0.5em] font-bold">
+                    <li><a href="#inicio" class="hover:text-[#B28B46] transition">Inicio</a></li>
+                    <li><a href="#sabores" class="hover:text-[#B28B46] transition">Sabores</a></li>
+                    <li><a href="#taquizas" class="hover:text-[#B28B46] transition">Taquizas</a></li>
+                    <li><a href="#ubicaciones" class="hover:text-[#B28B46] transition">Puntos de Venta</a></li>
+                </ul>
+                
+                <div class="flex md:hidden space-x-6 text-white text-[9px] uppercase tracking-[0.3em] font-bold">
+                    <a href="#sabores">Sabores</a>
+                    <a href="#taquizas">Taquizas</a>
+                    <a href="#ubicaciones">Puntos</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-[85vh] md:h-[92vh] flex items-center justify-center text-center text-white overflow-hidden bg-stone-900">
+        <img src="hero-principal.png" width="1920" height="1080" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="relative z-10 px-6">
+            <h1 class="text-4xl md:text-8xl mb-4 drop-shadow-2xl">CECINA PICHOS</h1>
+            <p class="text-sm md:text-2xl font-light tracking-[0.3em] md:tracking-[0.4em] uppercase opacity-90">
+                Cecina auténtica de Yecapixtla.
+            </p>
+            <div class="mt-8 flex justify-center gap-4 flex-wrap">
+                <a href="#ubicaciones" class="border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-[#3D0510] transition">
+                    Ver ubicaciones
+                </a>
+                <a href="https://wa.me/525649818188?text=Hola,%20¿dónde%20están%20hoy?" class="bg-[#3D0510] px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-[#B28B46] transition">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sabores" class="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16 md:mb-20">
+            <h2 class="text-3xl md:text-4xl mb-2">Nuestros Sabores</h2>
+            <p class="text-[10px] uppercase tracking-widest text-stone-500">por taco, por kilo y mayoreo</p>
+            <div class="w-16 md:w-20 h-1 bg-[#B28B46] mx-auto mt-4"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+            <div class="card-madera p-6 text-center">
+                <img src="cecina-natural.png" loading="lazy" alt="Cecina Natural" class="w-full h-56 md:h-64 object-cover mb-8">
+                <h3 class="text-xl md:text-2xl mb-4">Cecina Natural</h3>
+                <p class="text-stone-500 text-sm leading-relaxed">Nuestra joya de la corona, curada artesanalmente con sal de grano y el sol de Morelos.</p>
+            </div>
+            <div class="card-madera p-6 text-center">
+                <img src="cecina-enchilada.png" loading="lazy" alt="Cecina Enchilada" class="w-full h-56 md:h-64 object-cover mb-8">
+                <h3 class="text-xl md:text-2xl mb-4">Cecina Enchilada</h3>
+                <p class="text-stone-500 text-sm leading-relaxed">Adobada con nuestra receta secreta de chiles secos.</p>
+            </div>
+            <div class="card-madera p-6 text-center">
+                <img src="longaniza.png" loading="lazy" alt="Longaniza" class="w-full h-56 md:h-64 object-cover mb-8">
+                <h3 class="text-xl md:text-2xl mb-4">Longaniza</h3>
+                <p class="text-stone-500 text-sm leading-relaxed">Elaborada con carne selecta y mezcla de especias.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="taquizas" class="py-16 md:py-24 bg-textura-crema overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+                <div class="w-full md:w-1/2">
+                    <img src="taquizas.png" loading="lazy" alt="Taquizas Cecina Pichos" class="shadow-2xl w-full">
+                </div>
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl mb-6">Servicio de Taquizas</h2>
+                    <p class="text-stone-600 text-base md:text-lg mb-8 leading-relaxed italic">
+                        Llevamos la experiencia completa de Yecapixtla a tu evento. Bodas, cumpleaños, graduación, XV años.
+                    </p>
+                    <a href="https://wa.me/525649818188?text=Hola,%20quiero%20cotizar%20una%20taquiza" class="inline-block bg-[#3D0510] text-white px-10 py-4 text-[10px] font-bold uppercase tracking-widest hover:bg-[#B28B46] transition">
+                        Cotizar ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicaciones" class="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16 md:mb-20">
+            <h2 class="text-3xl md:text-4xl mb-4">Puntos de Venta</h2>
+            <div class="w-16 md:w-20 h-1 bg-[#B28B46] mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+            <div class="bg-white p-8 md:p-12 border-t-4 border-[#B28B46] shadow-sm text-center">
+                <p class="text-[#B28B46] text-[10px] font-bold mb-4 uppercase tracking-widest">Martes</p>
+                <h3 class="text-xl md:text-2xl mb-4">Plaza Ozumba</h3>
+                <p class="text-stone-500 text-xs mb-8 italic">A un costado de Elektra</p>
+                <a href="http://maps.google.com/?q=Plaza+Ozumba+Elektra" target="_blank" rel="noopener noreferrer" class="text-[10px] font-bold border-b-2 border-[#B28B46] pb-1 hover:text-[#B28B46] transition uppercase tracking-widest">Mapa →</a>
+            </div>
+            <div class="bg-white p-8 md:p-12 border-t-4 border-[#B28B46] shadow-sm text-center">
+                <p class="text-[#B28B46] text-[10px] font-bold mb-4 uppercase tracking-widest">Viernes</p>
+                <h3 class="text-xl md:text-2xl mb-4">Plaza Ozumba</h3>
+                <p class="text-stone-500 text-xs mb-8 italic">A un costado de la presidencia</p>
+                <a href="http://maps.google.com/?q=Plaza+Ozumba+Presidencia" target="_blank" rel="noopener noreferrer" class="text-[10px] font-bold border-b-2 border-[#B28B46] pb-1 hover:text-[#B28B46] transition uppercase tracking-widest">Mapa →</a>
+            </div>
+            <div class="bg-white p-8 md:p-12 border-t-4 border-[#B28B46] shadow-sm text-center">
+                <p class="text-[#B28B46] text-[10px] font-bold mb-4 uppercase tracking-widest">Sábado y Domingo</p>
+                <h3 class="text-xl md:text-2xl mb-4">Los Reyes, La Paz</h3>
+                <p class="text-stone-500 text-xs mb-8 italic">Div. del Norte y Pinosuarez</p>
+                <a href="http://maps.google.com/?q=Los+Reyes+La+Paz+Cecina" target="_blank" rel="noopener noreferrer" class="text-[10px] font-bold border-b-2 border-[#B28B46] pb-1 hover:text-[#B28B46] transition uppercase tracking-widest">Mapa →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center border-t-4 border-[#B28B46]">
+        <img src="sello-cera.png" loading="lazy" alt="Sello Cecina Pichos" class="h-20 md:h-24 mx-auto mb-4">
+        <p class="text-white text-[9px] md:text-[10px] uppercase tracking-[0.3em] px-4">
+            © 2026 Cecina Pichos Yecapixtla | Legado Familiar desde 1997
+        </p>
+    </footer>
+
+    <img src="pluma_derecha.png" loading="lazy" width="160" height="160" class="pluma-animada right-10 top-1/4 w-32 md:w-40 hidden md:block">
+    <img src="pluma_izquierda.png" loading="lazy" width="160" height="160" class="pluma-animada left-10 bottom-1/4 w-32 md:w-40 hidden md:block" style="animation-delay:2s;">
+
+    <a href="https://wa.me/525649818188?text=Hola,%20¿dónde%20están%20hoy?" 
+       class="fixed bottom-6 right-6 bg-[#B28B46] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition z-50" 
+       aria-label="WhatsApp">
+        <svg class="w-6 h-6 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+        </svg>
+    </a>
+
+</body>
+</html>
